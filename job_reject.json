@@ -1,0 +1,25 @@
+{
+    "name": "Job Reject",
+    "properties": {
+        "type": {
+            "type": "string",
+            "description": "Worker message type.",
+            "required": "true"
+        },
+        "job": {
+            "type": "string",
+            "description": "Job ID/GUID.",
+            "required": "false"
+        },
+        "worker": {
+            "type": "string",
+            "description": "Worker host/pid. Optional because it will be injected by the skew daemon if not set.",
+            "required": "false"
+        },
+        "reason": {
+            "type": "string",
+            "description": "Reason for rejection.",
+            "required": "true"
+        }
+    }
+}

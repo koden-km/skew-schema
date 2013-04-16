@@ -1,0 +1,35 @@
+{
+    "name": "Job Request",
+    "properties": {
+        "type": {
+            "type": "string",
+            "description": "Job message type.",
+            "required": "true"
+        },
+        "job": {
+            "type": "string",
+            "description": "Job ID/GUID.",
+            "required": "true"
+        },
+        "tags": {
+            "type": "array",
+            "description": "Tags associated with the job.",
+            "required": "true",
+            "items": {
+                "type": "string",
+                "description": "Tag name.",
+                "required": "false"
+            }
+        },
+        "task": {
+            "type": "string",
+            "description": "Name of task to do in the job.",
+            "required": "true"
+        },
+        "payload": {
+            "type": "object",
+            "description": "Key/Value data used by the task.",
+            "required": "true"
+        }
+    }
+}

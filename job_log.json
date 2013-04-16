@@ -1,0 +1,25 @@
+{
+    "name": "Job Log",
+    "properties": {
+        "type": {
+            "type": "string",
+            "description": "Worker message type.",
+            "required": "true"
+        },
+        "job": {
+            "type": "string",
+            "description": "Job ID/GUID.",
+            "required": "false"
+        },
+        "level": {
+            "type": "string",
+            "description": "Log level, eg. error|warning|info.",
+            "required": "false"
+        },
+        "message": {
+            "type": "string",
+            "description": "Log message.",
+            "required": "true"
+        }
+    }
+}

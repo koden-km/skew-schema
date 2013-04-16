@@ -1,0 +1,25 @@
+{
+    "name": "Worker Start",
+    "properties": {
+        "type": {
+            "type": "string",
+            "description": "Worker message type.",
+            "required": "true"
+        },
+        "worker": {
+            "type": "string",
+            "description": "Worker host/pid. Optional because it will be injected by the skew daemon if not set.",
+            "required": "false"
+        },
+        "capabilities": {
+            "type": "array",
+            "description": "Worker task supported capabilities.",
+            "required": "false",
+            "items": {
+                "type": "string",
+                "description": "Supported task.",
+                "required": "false"
+            }
+        }
+    }
+}

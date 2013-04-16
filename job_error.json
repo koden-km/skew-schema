@@ -1,0 +1,20 @@
+{
+    "name": "Job Error",
+    "properties": {
+        "type": {
+            "type": "string",
+            "description": "Worker message type.",
+            "required": "true"
+        },
+        "job": {
+            "type": "string",
+            "description": "Job ID/GUID.",
+            "required": "false"
+        },
+        "message": {
+            "type": "string",
+            "description": "Error message.",
+            "required": "true"
+        }
+    }
+}
